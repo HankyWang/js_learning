@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+    function remoteopener(url){
+      var remote=window.open(url,"weblogWindow","width=180,height=490,scrollbar=yes,resizable=no");
+      if (remote.opener = NULL){
+        remote.opener = window;
+      }
+    }
+  </script>
+</head>
+<body onload="javascript:remoteopener('guide.html')">
+TEST
+</body>
+</html>

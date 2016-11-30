@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .field {width: 300; border: 5px solid yellow ;background:lightyellow;}
+    .front {background: darkred;color :white;}
+    .back {background: purple;color :white;}
+    .al {display:block;text-align: right;float:left;width:200px;}
+  </style>
+</head>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<body>
+  <form action="" method="post" enctype="multipart/form-data">
+    <h1>Please Enter Your Details For Our Dating Website!</h1> <br>
+    <fieldset class="field">
+      <legend><h3>Your Face</h3></legend>
+      <span class="al">Your image&nbsp</span>
+      <input type="file" name="name" required><br>
+      <span class="al">Image Preview&nbsp</span><br>
+      <img id="preview">
+    </fieldset>
+    <fieldset class="field">
+      <legend><h3>Your General Details</h3></legend>
+      <span class="al">Name&nbsp</span> 
+      <input type="text" name="name" placeholder="Please type your name"><br>
+      <span class="al">Gender&nbsp</span>
+      <input type="radio" name="gender" value="male" checked>Male
+      <input type="radio" name="gender" value="female">Female<br>
+      <span class="al">Age&nbsp</span> 
+      <input type="number" name="age" value="18"><br>
+      <span class="al">Date of birth&nbsp</span>
+      <input type="date" name="date"><br>
+      <span class="al">Which Country</span>
+      <select name="Country">
+        <option value="China" >China</option>
+        <option value="Japan" >Japan</option>
+        <option value="USA" >USA</option>
+      </select><br>
+    </fieldset>
+    <fieldset class="field">
+      <legend><h3>Your Indicators</h3></legend>
+      <span class="al">Height&nbsp</span>
+      <span class="front">Short</span>
+      <input type="range" name="height" step="10">
+      <span class="back">Tall</span><br>
+      <span class="al">Salary&nbsp</span>
+      <span class="front">Poor&nbsp</span>
+      <input type="range" name="salary" step="10">
+      <span class="back">High</span><br>
+    </fieldset>
+    <fieldset class=field>
+      <legend><h3>Your Contact Information</h3></legend>
+      <span class="al">Email:&nbsp</span>
+      <input type="email" name="email"><br>
+      <span class="al">Mobile:&nbsp</span>
+      <input type="mobile" name="mobile"><br>
+      <span class="al">Address:&nbsp</span>
+      <input type="textarea" name="address" style="vertical-align:bottom;width:200px;height: 30px"><br>
+      <span class="al">Method to contact you&nbsp</span>
+      <input type="checkbox" name="method" value="Email">Email
+      <input type="checkbox" name="method" value="Whatsapp">Whatsapp
+      <input type="checkbox" name="method" value="In-app chat">In-app chat
+    </fieldset>
+    <input type="submit" name="bt" value="submit" style="height:25px;width:50">
+  </form>
+
+</body>
+</html>
